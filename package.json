@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-capsolver",
-  "version": "0.3.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Official n8n nodes for CapSolver",
   "keywords": [
     "n8n-community-node-package",
     "n8n",
@@ -60,7 +60,7 @@
       "dist/credentials/CapSolverApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/CapSolver/CapSolver.node.js"
+      "dist/nodes/CapSolver/Capsolver.node.js"
     ]
   },
   "devDependencies": {

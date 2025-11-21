@@ -213,7 +213,7 @@ const requiredDescriptions: INodeProperties[] = [
 		required: true,
 		placeholder: 'https://example.com/',
 		description:
-			'The URL of the target webpage that loads the captcha, It’s best to submit the full URL instead of just the host.',
+			'The URL of the target webpage that loads the captcha, It’s best to submit the full URL instead of just the host',
 		displayOptions: {
 			show: {
 				resource: [resourceToken],
@@ -237,7 +237,7 @@ const requiredDescriptions: INodeProperties[] = [
 		default: '',
 		required: true,
 		placeholder: '',
-		description: 'Captcha site key.',
+		description: 'Captcha site key',
 		displayOptions: {
 			show: {
 				resource: [resourceToken],
@@ -257,7 +257,7 @@ const requiredDescriptions: INodeProperties[] = [
 		default: '',
 		required: true,
 		placeholder: 'ip:port:user:pass',
-		description: 'Proxy used for solving captcha.',
+		description: 'Proxy used for solving captcha',
 		displayOptions: {
 			show: {
 				resource: [resourceToken],
@@ -290,7 +290,7 @@ const requiredDescriptions: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Only Geetest V3 is required.',
+		description: 'Only Geetest V3 is required',
 		displayOptions: {
 			show: {
 				'/resource': [resourceToken],
@@ -304,7 +304,7 @@ const requiredDescriptions: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Only Geetest V3 is required.',
+		description: 'Only Geetest V3 is required',
 		displayOptions: {
 			show: {
 				'/resource': [resourceToken],
@@ -320,7 +320,7 @@ const requiredDescriptions: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Only GeeTest V4 is required.',
+		description: 'Only GeeTest V4 is required',
 		displayOptions: {
 			show: {
 				'/resource': [resourceToken],
@@ -336,8 +336,7 @@ const requiredDescriptions: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description:
-			'If the url contains t=bv that means that your ip must be banned, t should be t=fe.',
+		description: 'If the URL contains t=bv that means that your ip must be banned, t should be t=fe',
 		displayOptions: {
 			show: {
 				'/resource': [resourceToken],
@@ -351,8 +350,7 @@ const requiredDescriptions: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description:
-			'It needs to be the same as the userAgent you use to request the website. Please refer to the capsolver documentation.',
+		description: 'It needs to be the same as the userAgent you use to request the website. Please refer to the capsolver documentation.',
 		displayOptions: {
 			show: {
 				'/resource': [resourceToken],

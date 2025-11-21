@@ -94,8 +94,7 @@ const requiredDescriptions: INodeProperties[] = [
 		type: 'string',
 		placeholder: 'https://example.com/',
 		default: '',
-		required: false,
-		description: 'Page source url to improve accuracy.',
+		description: 'Page source URL to improve accuracy',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -116,7 +115,6 @@ const requiredDescriptions: INodeProperties[] = [
 		type: 'string',
 		default: 'common',
 		placeholder: 'common',
-		required: false,
 		description: 'Specifies the module. All supported models are shown in the table below.',
 		displayOptions: {
 			show: {
@@ -130,10 +128,8 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'body',
 		type: 'string',
 		default: '',
-		required: false,
 		placeholder: '/9j/4AAQSkZJRgABA......',
-		description:
-			'base64 encoded content of the image (no newlines, no data:image/***;charset=utf-8;base64,)',
+		description: 'Base64 encoded content of the image (no newlines, no data:image/***;charset=utf-8;base64,)',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -146,7 +142,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 1',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -159,7 +155,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 2',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -172,7 +168,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 3',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -185,7 +181,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 4',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -198,7 +194,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 5',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -211,7 +207,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 6',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -224,7 +220,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 7',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -237,7 +233,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 8',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -250,7 +246,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 9',
 		type: 'string',
 		default: '',
-		description: 'Only for number module, Support up to 9 base64 encoded images each time.',
+		description: 'Only for number module, Support up to 9 base64 encoded images each time',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],
@@ -265,7 +261,6 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'websiteKey',
 		type: 'string',
 		default: '',
-		required: false,
 		description: 'Website key to improve accuracy',
 		displayOptions: {
 			show: {
@@ -281,7 +276,7 @@ const requiredDescriptions: INodeProperties[] = [
 		default: '',
 		required: true,
 		placeholder: '/9j/4AAQSkZJRgA...',
-		description: 'base64 image string.',
+		description: 'Base64 image string',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -296,7 +291,7 @@ const requiredDescriptions: INodeProperties[] = [
 		default: '',
 		required: true,
 		placeholder: '/m/04_sv',
-		description: 'please refer to the following list of questions.',
+		description: 'Please refer to the following list of questions',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -313,7 +308,7 @@ const requiredDescriptions: INodeProperties[] = [
 		default: '',
 		required: true,
 		placeholder: 'aws:toycarcity:carcity',
-		description: 'For full names of questions, please refer to the following list of questions.',
+		description: 'For full names of questions, please refer to the following list of questions',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -327,8 +322,7 @@ const requiredDescriptions: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -341,9 +335,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 2',
 		type: 'string',
 		default: '',
-		required: false,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -356,9 +348,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 3',
 		type: 'string',
 		default: '',
-		required: false,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -371,9 +361,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 4',
 		type: 'string',
 		default: '',
-		required: false,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -386,9 +374,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 5',
 		type: 'string',
 		default: '',
-		required: false,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -401,9 +387,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 6',
 		type: 'string',
 		default: '',
-		required: false,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -416,9 +400,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 7',
 		type: 'string',
 		default: '',
-		required: false,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -431,9 +413,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 8',
 		type: 'string',
 		default: '',
-		required: false,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -446,9 +426,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'images 9',
 		type: 'string',
 		default: '',
-		required: false,
-		description:
-			'base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
+		description: 'Base64 image string, aws:grid supports 9 images each time, other types support 1 image each time',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -465,7 +443,7 @@ const requiredDescriptions: INodeProperties[] = [
 		default: '',
 		required: true,
 		placeholder: 'slider_1',
-		description: 'For supported models, please refer to the capsolver documentation.',
+		description: 'For supported models, please refer to the capsolver documentation',
 		displayOptions: {
 			show: {
 				resource: [resourceRecognition],
@@ -494,7 +472,6 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'imageBackground',
 		type: 'string',
 		default: '',
-		required: false,
 		placeholder: '/9j/4AAQSkZJRgABA......',
 		description:
 			'Base64 encoded content of the background image (no newlines, no data:image/***;charset=utf-8;base64,)',
@@ -510,8 +487,7 @@ const requiredDescriptions: INodeProperties[] = [
 		name: 'question',
 		type: 'string',
 		default: '',
-		required: false,
-		description: 'Only the shein model requires.',
+		description: 'Only the shein model requires',
 		displayOptions: {
 			show: {
 				'/resource': [resourceRecognition],

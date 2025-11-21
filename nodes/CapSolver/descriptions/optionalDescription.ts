@@ -15,7 +15,7 @@ export const optionalDescriptions: any[] = [
 				type: 'string',
 				default: '',
 				description:
-					'For ReCaptchaV2, if there is an sa parameter in the payload of the /anchor endpoint, please submit its value.<br><br>For ReCaptchaV3: You can find the value of the action parameter by searching for grecaptcha.execute.',
+					'For ReCaptchaV2, if there is an sa parameter in the payload of the /anchor endpoint, please submit its value.<br><br>For ReCaptchaV3: You can find the value of the action parameter by searching for grecaptcha.execute',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -29,7 +29,7 @@ export const optionalDescriptions: any[] = [
 				type: 'json',
 				default: '{ "s": "" }',
 				description:
-					'For ReCaptchaV2 enterprise version, if there is an s parameter in the payload of the /anchor endpoint, please submit its value.<br><br>For ReCaptchaV3 enterprise version, search for grecaptcha.enterprise.render and pass the s parameter.',
+					'For ReCaptchaV2 enterprise version, if there is an s parameter in the payload of the /anchor endpoint, please submit its value.<br><br>For ReCaptchaV3 enterprise version, search for grecaptcha.enterprise.render and pass the s parameter',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -43,7 +43,7 @@ export const optionalDescriptions: any[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Pass true if there is no “I’m not a robot” checkbox but the challenge will still appear, usually required in v2 invisible mode.',
+					'Pass true if there is no “I’m not a robot” checkbox but the challenge will still appear, usually required in v2 invisible mode',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -71,8 +71,7 @@ export const optionalDescriptions: any[] = [
 				type: 'string',
 				placeholder: 'http://www.recaptcha.net/',
 				default: '',
-				description:
-					'The domain name for loading the captcha. Usually, this parameter does not need to be passed.<br><br>- http://www.google.com/<br>- http://www.recaptcha.net/',
+				description: 'The domain name for loading the captcha. Usually, this parameter does not need to be passed.<br><br>- http://www.google.com/<br>- http://www.recaptcha.net/.',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -88,7 +87,7 @@ export const optionalDescriptions: any[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The value of the data-action attribute of the Turnstile element if it exists.',
+					'The value of the data-action attribute of the Turnstile element if it exists',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -101,7 +100,7 @@ export const optionalDescriptions: any[] = [
 				name: 'cdata',
 				type: 'string',
 				default: '',
-				description: 'The value of the data-cdata attribute of the Turnstile element if it exists.',
+				description: 'The value of the data-cdata attribute of the Turnstile element if it exists',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -164,7 +163,7 @@ export const optionalDescriptions: any[] = [
 				name: 'awsKey',
 				type: 'string',
 				default: '',
-				description: 'The key value returned by the captcha page.',
+				description: 'The key value returned by the captcha page',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -177,7 +176,7 @@ export const optionalDescriptions: any[] = [
 				name: 'awsIv',
 				type: 'string',
 				default: '',
-				description: 'The iv value returned by the captcha page.',
+				description: 'The iv value returned by the captcha page',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -190,7 +189,7 @@ export const optionalDescriptions: any[] = [
 				name: 'awsContext',
 				type: 'string',
 				default: '',
-				description: 'The context value returned by the captcha page.',
+				description: 'The context value returned by the captcha page',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -203,7 +202,7 @@ export const optionalDescriptions: any[] = [
 				name: 'awsChallengeJS',
 				type: 'string',
 				default: '',
-				description: 'The challenge.js link returned by the captcha page.',
+				description: 'The challenge.js link returned by the captcha page',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -216,7 +215,7 @@ export const optionalDescriptions: any[] = [
 				name: 'awsApiJs',
 				type: 'string',
 				default: '',
-				description: 'The jsapi.js link returned by the captcha page.',
+				description: 'The jsapi.js link returned by the captcha page',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -230,7 +229,7 @@ export const optionalDescriptions: any[] = [
 				type: 'string',
 				default: '',
 				description:
-					'The problem endpoint url containing keywords like problem, num_solutions_required, etc.',
+					'The problem endpoint URL containing keywords like problem, num_solutions_required, etc',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -243,7 +242,7 @@ export const optionalDescriptions: any[] = [
 				name: 'awsApiKey',
 				type: 'string',
 				default: '',
-				description: 'The api_key value of the problem endpoint.',
+				description: 'The api_key value of the problem endpoint',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
@@ -256,7 +255,7 @@ export const optionalDescriptions: any[] = [
 				name: 'awsExistingToken',
 				type: 'string',
 				default: '',
-				description: 'The aws-waf-token used for the last verification.',
+				description: 'The aws-waf-token used for the last verification',
 				displayOptions: {
 					show: {
 						'/resource': [resourceToken],
