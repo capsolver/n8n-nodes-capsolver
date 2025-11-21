@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 0.1.0 (2025-11-21)
+
+
+### Bug Fixes
+
+* .eslintrc.js, version ([ce8ccab](https://github.com/capsolver/n8n-nodes-capsolver/commit/ce8ccabf30588ac48a530371692f644c268c5d7e))
+* rebuild ([a4e3b78](https://github.com/capsolver/n8n-nodes-capsolver/commit/a4e3b78b2d9e8f9ffd12da09dfe5cee0a996edd0))
+
 ## 0.2.0 (2025-11-21)
 
 
