@@ -1,0 +1,83 @@
+{
+  "name": "n8n-nodes-capsolver",
+  "version": "0.0.0",
+  "description": "Official n8n nodes for CapSolver",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "solver",
+    "capsolver",
+    "captcha",
+		"geetest",
+    "geetestv3",
+    "geetestv4",
+		"recaptcha",
+    "recaptchav2",
+    "recaptchav3",
+		"cloudflare",
+		"turnstile",
+		"challenge",
+    "cloudflare challenge",
+		"cloudflare turnstile",
+		"datadome",
+    "AWS WAF",
+    "MTCaptcha",
+    "crack",
+    "automation"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.capsolver.com/",
+  "author": {
+    "name": "capsolver",
+    "email": "support@capsolver.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/capsolver/n8n-nodes-capsolver.git"
+  },
+  "engines": {
+    "node": ">=20.15"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:patch": "standard-version --release-as patch",
+    "release:prerelease": "standard-version --prerelease",
+    "release:alpha": "standard-version --prerelease alpha",
+    "release:beta": "standard-version --prerelease beta",
+    "release:dry-run": "standard-version --dry-run"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/CapSolverApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/CapSolver/Capsolver.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "@typescript-eslint/parser": "~8.32.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "gulp": "^5.0.0",
+    "prettier": "^3.5.3",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
