@@ -17,6 +17,9 @@ export class Task {
 				url: `${API_URL}/createTask`,
 				body: createTaskPayload,
 				json: true,
+				headers: {
+					'Content-Type': 'application/json',
+				},
 			});
 			if (!response.taskId) {
 				throw new NodeOperationError(
@@ -45,6 +48,9 @@ export class Task {
 				url: `${API_URL}/getTaskResult`,
 				body: getResultPayload,
 				json: true,
+				headers: {
+					'Content-Type': 'application/json',
+				},
 			});
 		} catch (error: any) {
 			throw new NodeOperationError(
