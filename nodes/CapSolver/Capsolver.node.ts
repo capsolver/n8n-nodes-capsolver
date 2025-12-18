@@ -3,12 +3,16 @@ import {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
+	NodeConnectionTypes,
 	NodeOperationError,
 } from 'n8n-workflow';
 import { INodeContext, Solver } from './libs';
 import { handleRecognitionActions, handleTokenActions } from './actions';
 import { captchaTypes, resourceRecognition, resourceToken } from './config';
 import { optionalDescriptions, recognitionDescriptions, tokenDescriptions } from './descriptions';
+
+const inputs = [NodeConnectionTypes.Main];
+const outputs = [NodeConnectionTypes.Main];
 
 export class CapSolver implements INodeType {
 	description: INodeTypeDescription = {
@@ -22,8 +26,8 @@ export class CapSolver implements INodeType {
 		defaults: {
 			name: 'CapSolver',
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		inputs,
+		outputs,
 		credentials: [
 			{
 				name: 'capSolverApi',
@@ -52,7 +56,7 @@ export class CapSolver implements INodeType {
 
 			// operation token
 			{
-				displayName: 'Captcha',
+				displayName: 'Operation',
 				name: 'operation',
 				type: 'options',
 				default: captchaTypes.recaptchaV2,

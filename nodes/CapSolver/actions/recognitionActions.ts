@@ -56,7 +56,7 @@ export async function handleRecognitionActions(context: INodeContext): Promise<I
 				success: true,
 				data: result,
 			},
-			pairedItem: context.i,
+			pairedItem: { item: context.i },
 		};
 	} catch (error) {
 		if (context.functionThis.continueOnFail()) {

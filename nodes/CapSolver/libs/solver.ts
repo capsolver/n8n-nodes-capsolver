@@ -1,4 +1,4 @@
-import { IExecuteFunctions, NodeOperationError } from 'n8n-workflow';
+import { IExecuteFunctions, NodeOperationError, sleep } from 'n8n-workflow';
 import { Task } from './task';
 import { resourceRecognition, TIME_OUT } from '../config';
 
@@ -43,13 +43,7 @@ export class Solver {
 					`Get task result timeout: unable to solve within ${TIME_OUT} seconds`,
 				);
 			}
-			this.delay(1000);
+			await sleep(1000);
 		}
-	}
-
-	private delay(ms: number): void {
-		const sab = new SharedArrayBuffer(4);
-		const arr = new Int32Array(sab);
-		Atomics.wait(arr, 0, 0, ms);
 	}
 }

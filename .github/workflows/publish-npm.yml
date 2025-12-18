@@ -115,7 +115,7 @@ jobs:
           fi
 
       - name: Generate release
-        if: steps.check-commits.outputs.should_release == 'true'
+        if: success() && steps.check-commits.outputs.should_release == 'true'
         run: |
           if [ "${{ steps.check-commits.outputs.version_type }}" == "major" ]; then
             echo "Running major release"
@@ -129,14 +129,14 @@ jobs:
           fi
 
       - name: Push changes and tags
-        if: steps.check-commits.outputs.should_release == 'true'
+        if: success() && steps.check-commits.outputs.should_release == 'true'
         run: |
           git push --follow-tags origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish package
-        if: steps.check-commits.outputs.should_release == 'true'
+        if: success() && steps.check-commits.outputs.should_release == 'true'
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

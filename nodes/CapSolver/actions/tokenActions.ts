@@ -39,7 +39,7 @@ export async function handleTokenActions(context: INodeContext): Promise<INodeEx
 				success: true,
 				data: result,
 			},
-			pairedItem: context.i,
+			pairedItem: { item: context.i },
 		};
 	} catch (error) {
 		if (context.functionThis.continueOnFail()) {
