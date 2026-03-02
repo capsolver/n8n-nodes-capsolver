@@ -64,7 +64,7 @@
       "dist/credentials/CapSolverApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/CapSolver/Capsolver.node.js"
+      "dist/nodes/CapSolver/CapSolver.node.js"
     ]
   },
   "devDependencies": {
