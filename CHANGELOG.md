@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/capsolver/n8n-nodes-capsolver/compare/v0.1.3...v0.1.4) (2026-03-02)
+
+
+### Bug Fixes
+
+* package.json ([a4a5938](https://github.com/capsolver/n8n-nodes-capsolver/commit/a4a59387da88f4227b7db6c74b2b14a176563c1c))
+
 ### [0.1.3](https://github.com/capsolver/n8n-nodes-capsolver/compare/v0.1.2...v0.1.3) (2026-03-02)
 
 
