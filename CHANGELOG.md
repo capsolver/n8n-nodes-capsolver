@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/capsolver/n8n-nodes-capsolver/compare/v0.1.2...v0.1.3) (2026-03-02)
+
+
+### Bug Fixes
+
+* the case formatting of capsolver ([bbfcff9](https://github.com/capsolver/n8n-nodes-capsolver/commit/bbfcff9cb7be1993d3dc4217dce786445e634530))
+
 ### [0.1.2](https://github.com/capsolver/n8n-nodes-capsolver/compare/v0.1.1...v0.1.2) (2025-12-18)
 
 
