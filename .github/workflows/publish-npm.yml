@@ -103,7 +103,7 @@ jobs:
             fi
 
             # Check other normal commits
-            COMMITS=$(git log $LAST_TAG..HEAD --oneline --grep="^fix\|^refactor\|^docs\|^style\|^test\|^build\|^ci\|^chore\|^revert" || echo "")
+            COMMITS=$(git log $LAST_TAG..HEAD --oneline --grep="^fix\|^refactor\|^docs\|^style\|^test\|^build\|^ci\|^chore\|^revert\|^update" || echo "")
             if [ -n "$COMMITS" ]; then
               echo "Found releasable commits since $LAST_TAG"
               echo "should_release=true" >> $GITHUB_OUTPUT

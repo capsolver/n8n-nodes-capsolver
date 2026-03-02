@@ -17,7 +17,7 @@ const outputs = [NodeConnectionTypes.Main];
 export class CapSolver implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'CapSolver',
-		name: 'capsolver',
+		name: 'capSolver',
 		icon: 'file:capsolver.svg',
 		group: ['transform'],
 		version: [1],
